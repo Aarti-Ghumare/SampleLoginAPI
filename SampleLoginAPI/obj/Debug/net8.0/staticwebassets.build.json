@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "P2l/J/kW05Ne6Q4SJ9ibBNHYHtyrQhIm1KEg270FjDY=",
+  "Source": "SampleLoginAPI",
+  "BasePath": "_content/SampleLoginAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
