@@ -7,19 +7,42 @@ namespace SampleLoginAPI.Controllers
     [ApiController]
     public class OTPController : ControllerBase
     {
-        [HttpPost("verify")]
-        public IActionResult VerifyOtp([FromBody] OTPVerification model)
+        [HttpPost("verify-sms")]
+        public IActionResult VerifySmsOtp([FromBody] OTPVerification model)
         {
-            if (!OtpStore.UserOtps.TryGetValue(model.EmailOrPhone, out var storedOtp))
-                return NotFound(new { message = "OTP not found for this contact" });
+            if (OtpStore.UserOtps.TryGetValue(model.EmailOrPhone, out var storedOtp))
+            {
+                if (storedOtp == model.Otp)
+                {
+                    OtpStore.UserOtps.Remove(model.EmailOrPhone);
+                    return Ok(new { message = "SMS OTP verified successfully." });
+                }
+                else
+                {
+                    return BadRequest(new { message = "Invalid SMS OTP." });
+                }
+            }
 
-            if (storedOtp != model.Otp)
-                return BadRequest(new { message = "Invalid OTP" });
+            return NotFound(new { message = "No SMS OTP found for this phone number" });
+        }
 
-            OtpStore.UserOtps.Remove(model.EmailOrPhone);
-            return Ok(new { message = "Login verified successfully" });
+        [HttpPost("verify-email")]
+        public IActionResult VerifyEmailOtp([FromBody] OTPVerification model)
+        {
+            if (OtpStore.UserOtps.TryGetValue(model.EmailOrPhone, out var storedOtp))
+            {
+                if (storedOtp == model.Otp)
+                {
+                    OtpStore.UserOtps.Remove(model.EmailOrPhone);
+                    return Ok(new { message = "Email OTP verified successfully" });
+                }
+                else
+                {
+                    return BadRequest(new { message = "Invalid Email OTP." });
+                }
+            }
+
+            return NotFound(new { message = "No Email OTP found for this email address." });
         }
     }
 }
-
-

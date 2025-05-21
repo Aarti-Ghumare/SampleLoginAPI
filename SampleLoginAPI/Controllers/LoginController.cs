@@ -10,7 +10,6 @@ namespace SampleLoginAPI.Controllers
     public class LoginController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-
         public LoginController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -22,8 +21,8 @@ namespace SampleLoginAPI.Controllers
             if (string.IsNullOrEmpty(model.EmailOrPhone) || string.IsNullOrEmpty(model.Password))
                 return BadRequest(new { message = "Email/Phone and Password are required" });
 
-            var input = model.EmailOrPhone.Trim();
-            var password = model.Password.Trim();
+            string input = model.EmailOrPhone;
+            string password = model.Password;
 
             using var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
 
@@ -32,6 +31,7 @@ namespace SampleLoginAPI.Controllers
 
             if (user == null)
                 return NotFound(new { message = "Invalid Email/Phone or Password" });
+
             var otp = new Random().Next(100000, 999999).ToString();
 
             OtpStore.UserOtps[input] = otp;
@@ -40,6 +40,6 @@ namespace SampleLoginAPI.Controllers
 
             return Ok(new { message = "OTP sent successfully", otp = otp }); 
         }
-    }
+    }   
 }
 

@@ -17,8 +17,24 @@
   },
   {
     "ContainingType": "SampleLoginAPI.Controllers.OTPController",
-    "Method": "VerifyOtp",
-    "RelativePath": "api/OTP/verify",
+    "Method": "VerifyEmailOtp",
+    "RelativePath": "api/OTP/verify-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SampleLoginAPI.Model.OTPVerification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SampleLoginAPI.Controllers.OTPController",
+    "Method": "VerifySmsOtp",
+    "RelativePath": "api/OTP/verify-sms",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
