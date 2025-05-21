@@ -7,34 +7,19 @@ namespace SampleLoginAPI.Controllers
     [ApiController]
     public class OTPController : ControllerBase
     {
-        private IActionResult Verify(string key, string providedOtp, string type)
+        [HttpPost("verify")]
+        public IActionResult VerifyOtp([FromBody] OTPVerification model)
         {
-            if (OtpStore.UserOtps.TryGetValue(key, out var storedOtp))
-            {
-                if (storedOtp == providedOtp)
-                {
-                    OtpStore.UserOtps.Remove(key); 
-                    return Ok(new { message = $"{type} OTP verified successfully." });
-                }
-                else
-                {
-                    return BadRequest(new { message = $"Invalid {type} OTP." });
-                }
-            }
+            if (!OtpStore.UserOtps.TryGetValue(model.EmailOrPhone, out var storedOtp))
+                return NotFound(new { message = "OTP not found for this contact" });
 
-                return NotFound(new { message = $"No OTP found for this {type}." });
-        }
+            if (storedOtp != model.Otp)
+                return BadRequest(new { message = "Invalid OTP" });
 
-        [HttpPost("verify-sms")]
-        public IActionResult VerifySmsOtp([FromBody] OTPVerification model)
-        {
-            return Verify(model.EmailOrPhone, model.Otp, "SMS");
-        }
-
-        [HttpPost("verify-email")]
-        public IActionResult VerifyEmailOtp([FromBody] OTPVerification model)
-        {
-            return Verify(model.EmailOrPhone, model.Otp, "Email");
+            OtpStore.UserOtps.Remove(model.EmailOrPhone);
+            return Ok(new { message = "Login verified successfully" });
         }
     }
 }
+
+
