@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "SampleLoginAPI.Controllers.LoginController",
+    "ContainingType": "SampleLoginAPI.Controllers.AccountController",
     "Method": "Login",
-    "RelativePath": "api/Login",
+    "RelativePath": "api/Account/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -16,25 +16,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SampleLoginAPI.Controllers.OTPController",
-    "Method": "VerifyEmailOtp",
-    "RelativePath": "api/OTP/verify-email",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "SampleLoginAPI.Model.OTPVerification",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SampleLoginAPI.Controllers.OTPController",
-    "Method": "VerifySmsOtp",
-    "RelativePath": "api/OTP/verify-sms",
+    "ContainingType": "SampleLoginAPI.Controllers.AccountController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Account/Verify-otp",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

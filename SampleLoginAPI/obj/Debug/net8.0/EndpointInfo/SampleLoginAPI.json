@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Login": {
+    "/api/Account/Login": {
       "post": {
         "tags": [
-          "Login"
+          "Account"
         ],
         "requestBody": {
           "content": {
@@ -36,41 +36,10 @@
         }
       }
     },
-    "/api/OTP/verify-sms": {
+    "/api/Account/Verify-otp": {
       "post": {
         "tags": [
-          "OTP"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/OTPVerification"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/OTPVerification"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/OTPVerification"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/OTP/verify-email": {
-      "post": {
-        "tags": [
-          "OTP"
+          "Account"
         ],
         "requestBody": {
           "content": {
@@ -118,10 +87,6 @@
       "OTPVerification": {
         "type": "object",
         "properties": {
-          "emailOrPhone": {
-            "type": "string",
-            "nullable": true
-          },
           "otp": {
             "type": "string",
             "nullable": true

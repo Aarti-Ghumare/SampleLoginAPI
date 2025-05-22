@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\aspnetcore\\SampleLoginAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\controllers\\otpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\controllers\\otpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\model\\otpstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\model\\otpstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\views\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\views\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\model\\otpverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\model\\otpverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\views\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\views\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\views\\js\\verify-otp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\views\\js\\verify-otp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\views\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\views\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\views\\verify-otp.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\views\\verify-otp.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|c:\\aspnetcore\\sampleloginapi\\sampleloginapi\\model\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42DEC119-07AA-4F34-809B-D256840142B1}|SampleLoginAPI\\SampleLoginAPI.csproj|solutionrelative:sampleloginapi\\model\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Program.cs",
-              "RelativeDocumentMoniker": "SampleLoginAPI\\Program.cs",
-              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Program.cs",
-              "RelativeToolTip": "SampleLoginAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "SampleLoginAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T07:09:33.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OTPVerification.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Model\\OTPVerification.cs",
-              "RelativeDocumentMoniker": "SampleLoginAPI\\Model\\OTPVerification.cs",
-              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Model\\OTPVerification.cs",
-              "RelativeToolTip": "SampleLoginAPI\\Model\\OTPVerification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:10:26.127Z",
+              "WhenOpened": "2025-05-22T10:11:10.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "SampleLoginAPI\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "SampleLoginAPI\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:47:34.253Z",
-              "EditorCaption": ""
+              "Title": "verify-otp.js",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\JS\\verify-otp.js",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Views\\JS\\verify-otp.js",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\JS\\verify-otp.js",
+              "RelativeToolTip": "SampleLoginAPI\\Views\\JS\\verify-otp.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T09:34:54.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OTPController.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Controllers\\OTPController.cs",
-              "RelativeDocumentMoniker": "SampleLoginAPI\\Controllers\\OTPController.cs",
-              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Controllers\\OTPController.cs",
-              "RelativeToolTip": "SampleLoginAPI\\Controllers\\OTPController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB8AAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T12:05:22.722Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\JS\\login.js",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Views\\JS\\login.js",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\JS\\login.js",
+              "RelativeToolTip": "SampleLoginAPI\\Views\\JS\\login.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T09:34:18.703Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OtpStore.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Model\\OtpStore.cs",
-              "RelativeDocumentMoniker": "SampleLoginAPI\\Model\\OtpStore.cs",
-              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Model\\OtpStore.cs",
-              "RelativeToolTip": "SampleLoginAPI\\Model\\OtpStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:59:04.738Z",
-              "EditorCaption": ""
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\css\\styles.css",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Views\\css\\styles.css",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\css\\styles.css",
+              "RelativeToolTip": "SampleLoginAPI\\Views\\css\\styles.css",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-22T09:32:54.194Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Model\\Login.cs",
-              "RelativeDocumentMoniker": "SampleLoginAPI\\Model\\Login.cs",
-              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Model\\Login.cs",
-              "RelativeToolTip": "SampleLoginAPI\\Model\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "verify-otp.html",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\verify-otp.html",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Views\\verify-otp.html",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\verify-otp.html",
+              "RelativeToolTip": "SampleLoginAPI\\Views\\verify-otp.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-22T09:13:38.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\login.html",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Views\\login.html",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Views\\login.html",
+              "RelativeToolTip": "SampleLoginAPI\\Views\\login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-22T09:10:44.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SampleLoginAPI\\Program.cs",
+              "ToolTip": "C:\\aspnetcore\\SampleLoginAPI\\SampleLoginAPI\\Program.cs",
+              "RelativeToolTip": "SampleLoginAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:12:26.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T07:09:33.129Z"
             }
           ]
         }

@@ -2,6 +2,8 @@
 {
     public class OtpStore
     {
-        public static Dictionary<string, string> UserOtps = new Dictionary<string, string>();
+        public static Dictionary<string, string> OtpToUser = new Dictionary<string, string>();
+
     }
+    
 }

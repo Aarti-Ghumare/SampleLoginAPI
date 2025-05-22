@@ -7,19 +7,22 @@ namespace SampleLoginAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class LoginController : ControllerBase
+    public class AccountController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        public LoginController(IConfiguration configuration)
+
+        public AccountController(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        [HttpPost]
+        [HttpPost("Login")]
         public IActionResult Login([FromBody] Login model)
         {
             if (string.IsNullOrEmpty(model.EmailOrPhone) || string.IsNullOrEmpty(model.Password))
+            {
                 return BadRequest(new { message = "Email/Phone and Password are required" });
+            }
 
             string input = model.EmailOrPhone;
             string password = model.Password;
@@ -30,16 +33,30 @@ namespace SampleLoginAPI.Controllers
             var user = connection.QueryFirstOrDefault<Login>(query, new { input, password });
 
             if (user == null)
+            {
                 return NotFound(new { message = "Invalid Email/Phone or Password" });
+            }
 
             var otp = new Random().Next(100000, 999999).ToString();
 
-            OtpStore.UserOtps[input] = otp;
+            OtpStore.OtpToUser[otp] = input;
 
-            Console.WriteLine($"Simulated OTP to {input}: {otp}");
+            Console.WriteLine($"[Simulated EMAIL/SMS] OTP sent to {input}: {otp}");
 
-            return Ok(new { message = "OTP sent successfully", otp = otp }); 
+            return Ok(new { message = "OTP sent successfully" });
         }
-    }   
-}
 
+        [HttpPost("Verify-otp")]
+        public IActionResult VerifyOtp([FromBody] OTPVerification model)
+        {
+            if (!OtpStore.OtpToUser.TryGetValue(model.Otp, out var userContact))
+            {
+                return BadRequest(new { message = "Invalid OTP" });
+            }
+
+            OtpStore.OtpToUser.Remove(model.Otp);
+
+            return Ok(new { message = "OTP Verified Successfully" });
+        }
+    }
+}
